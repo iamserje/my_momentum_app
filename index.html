@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+   <link href="assets/favicon.ico" rel="favicon.ico" >
+   <link rel="stylesheet" href="css/owfont-regular.css" >
+   <link rel="stylesheet" href="css/style.css" >
+   <link rel="stylesheet" href="css/todo.css">
+   <title>momentum</title>
+   <script src="./js/score.js"></script>
+</head>
+
+<body>
+   <header class="header">
+      <div class="player">
+         <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+         </div>
+         <div class="player-progress">
+            <input type="range" class="progress-bar" min="0" max="" value="0" onchange="changeProgresByHand()">
+            <div class="currentTime"></div>
+            <div class="durationTime"></div>
+         </div>
+         <ul class="play-list">
+            <li class="play-list__item">Aqua Caelestis</li>
+            <li class="play-list__item">River Flows In You</li>
+            <li class="play-list__item">Summer Wind</li>
+            <li class="play-list__item">Ennio Morricone</li>
+         </ul>
+      </div>
+      <div class="weather">
+         <input type="text" class="city" value="Ялта">
+         <i class="weather-icon owf"></i>
+         <div class="weather-error"></div>
+         <div class="description-container">
+            <span class="temperature">0°C</span>
+            <span class="weather-description">light snow</span>
+         </div>
+         <div class="wind">Wind speed: 8 m/s</div>
+         <div class="humidity">Humidity: 96%</div>
+      </div>
+   </header>
+   <main class="main">
+      <div class="slider-icons">
+         <button class="slide-prev slider-icon"></button>
+         <button class="slide-next slider-icon"></button>
+      </div>
+      <time class="time">5:25:17 PM</time>
+      <date class="date">Saturday, February 11</date>
+      <div class="greeting-container">
+         <span class="greeting">Good afternoon</span>
+         <input type="text" class="name" placeholder="[Enter Name]">
+      </div>
+   </main>
+   <footer class="footer">
+      <div class="settings">
+         <div class="settings__content">
+            <div class="language">
+               Language
+               <input type="radio" name="language" value="en" class="toggle-language">en
+               <input type="radio" name="language" value="ru" class="toggle-language">ru
+            </div>
+            <div class="hide-blocks">Blocks
+               <br>
+               <input type="checkbox" name="player" value="player" class="" checked>Player
+               <input type="checkbox" name="time" value="time" class="" checked>Time<br>
+               <input type="checkbox" name="date" value="date" class="" checked>Date
+               <input type="checkbox" name="greetingContainer" value="greeting-container" class="" checked>greeting
+               <input type="checkbox" name="quoteContainer" value="quote-container" class="" checked>quote
+               <input type="checkbox" name="weather" value="weather" class="" checked>weather
+            </div>
+         </div>
+         <div class="settings-save">Save</div>
+      </div>
+      <div class="quote__sett">
+         <button class="change-quote"></button>
+         <div class="quote-container">
+            <div class="quote">"Talk doesn't cook rice."</div>
+            <div class="author">Chinese proverb</div>
+         </div>
+      </div>
+      <div class="todo">
+         <div class="todo-title">ToDo</div>
+         <form class="todo__form">
+            <input class="todo__input" name="post" type="text" placeholder="Enter task" required>
+            <button class="todo__btn" type="submit">✔</button>
+         </form>
+         <ul class="todo__list">
+            <!-- <li class="todo__list-item">
+              <article class="post">
+                <p class="post__todo">Сдать отчет</p>
+                <button class="post__ready" type="button">✔</button>
+              </article>
+            </li>
+            <li class="todo__list-item">
+              <article class="post post_complete">
+                <p class="post__todo">Оформить документы</p>
+              </article>
+            </li> -->
+          </ul>
+      </div>
+
+      <div class="footer_down">
+         <div class="git-logo-year">
+            <a href="https://rs.school/js/" class="link-to-cource">
+               <img src="./images/svgs/rs_school_js.svg" width="70px" height="30px" alt="logo">
+            </a>
+            <span class="year">2023</span>
+            <a href="https//:github.com/iamserje" class="git">Sierge Voronkov</a>
+         </div>
+      </div>
+   </footer>
+   <script type="module" src="js/script.js"></script>
+   <script src="js/todo.js"></script>
+</body>
+
+</html>
